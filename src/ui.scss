@@ -1,0 +1,36 @@
+// шрифты
+
+@font-face {
+    font-family: "Geologica";
+    src: url("$fonts/geologica/Geologica-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Geologica";
+    src: url("$fonts/geologica/Geologica-Light.ttf") format("truetype");
+    font-weight:300
+}
+
+@font-face {
+    font-family: "Geologica";
+    src: url("$fonts/geologica/Geologica-ExtraLight.ttf") format("truetype");
+    font-weight:200
+}
+
+@font-face {
+    font-family: "Cruinn";
+    src: url("$fonts/cruinn/Cruinn\ Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Cruinn";
+    src: url("$fonts/cruinn/Cruinn\ Bold.ttf") format("truetype");
+    font-weight: bold;
+}
+
+// цвета
+
+$white: #ffffff;
+$black: #111111;
+$pink: #fb35a7;
+$accent: #6d41ce;
+$gradient:  linear-gradient(to right, #f234a3, #4852fd);
