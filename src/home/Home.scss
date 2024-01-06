@@ -1,0 +1,123 @@
+@import "../ui.scss";
+
+.home {
+    height: 100%;
+    padding: 42px;
+    background-color: $black;
+    color: $white;
+
+    .accent-text {
+        color: $accent;
+        font-weight: normal;
+    }
+
+    .primary-text{
+        font-family: "Geologica";
+        font-weight: 200;
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .login-btn {
+        margin: 8px;
+        text-align: right;
+        font-family: "Geologica";
+        font-weight: 200;
+        font-size: 14px;
+        line-height: 16px;
+        text-decoration: underline;
+    }
+
+    .title {
+        margin-bottom: 24px;
+        background: $gradient;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-size: 32px;
+        line-height: 54px;
+        font-family: "Cruinn";
+        font-weight: bold;
+    }
+
+    .subtitle {
+        width: 70%;
+        margin-bottom: 32px;
+        font-family: "Geologica";
+        font-weight: 200;
+        font-size: 20px;
+        line-height: 21px;
+    }
+
+    .appstore-btn {
+        width: 119px;
+        margin-bottom: 80px;
+    }
+    .caption {
+        margin-bottom: 32px;
+        font-family: "Geologica";
+        font-size: 18px;
+        line-height: 21px;
+        font-weight: normal;
+    }
+
+    .feature-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 32px;
+
+
+        &__item {
+            position: relative;
+            padding: 6px 12px;
+            font-family: "Geologica";
+            font-weight: 200;
+            font-size: 13px;
+           line-height: 16px;
+        }
+
+        &__item::before {
+            content: "";
+             position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 20px;
+            border: 1px solid transparent;
+            background: $gradient border-box;
+            -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: destination-out;
+            mask-composite: exclude;
+        }
+    }
+
+    .gradient-btn{
+        width: 100%;
+        margin-bottom: 8px;
+        padding: 16px;
+        border: none;
+        border-radius: 40px;
+        background: $gradient;
+        font-family: "Geologica";
+        font-weight: 300;
+        font-size: 16px;
+        line-height:22px;
+        color: $white;
+
+    }
+
+    .btn-caption{
+        margin-bottom: 20px;
+        font-family: "Geologica";
+        font-weight: 200;
+        font-size: 10px;
+        line-height:16px;
+        text-align: center;
+    }
+
+    
+}
