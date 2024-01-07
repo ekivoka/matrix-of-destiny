@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import "./FeatureCollapse.scss";
 import arrowIcon from "../assets/imgs/arrow-icon.svg";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 function FeatureCollapse({ children, title }) {
     const [isOpen, setIsOpen] = useState(false);
@@ -30,7 +30,7 @@ function FeatureCollapse({ children, title }) {
                         }}
                         transition={{ duration: 0.8, ease: [0.04, 0.62, 0.23, 0.98] }}
                         className="feature-collapse__content">
-                            {children}
+                        {children}
                     </motion.div>
                 )}
             </AnimatePresence>
@@ -40,13 +40,13 @@ function FeatureCollapse({ children, title }) {
 
 FeatureCollapse.propTypes = {
     title: PropTypes.string.isRequired,
-}
+};
 
 function ProBadge() {
     return <div className="pro-badge">PRO</div>;
 }
 
-function ArrowIcon({isOpen}) {
+function ArrowIcon({ isOpen }) {
     return (
         <div className={`arrow-icon${isOpen ? " open" : ""}`}>
             <img src={arrowIcon} alt="" />

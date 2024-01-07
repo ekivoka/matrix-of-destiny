@@ -11,16 +11,16 @@
     &__header {
         display: flex;
         justify-content: space-between;
-        flex-direction: row;        
+        flex-direction: row;
 
-        &-title{
+        &-title {
             font-family: "Geologica";
             font-weight: 200;
             font-size: 14px;
-            line-height:16px;
+            line-height: 16px;
             flex-grow: 1;
         }
-        &-icons{
+        &-icons {
             display: flex;
             align-items: center;
             gap: 6px;
@@ -29,12 +29,12 @@
 
     &__content {
         overflow: hidden;
-        .test{
+        .test {
             padding: 16px;
         }
     }
 
-    .pro-badge{
+    .pro-badge {
         background: $gradient;
         font-family: "Geologica";
         font-weight: 500;
@@ -44,12 +44,11 @@
         border-radius: 35px;
     }
 
-    .arrow-icon{
+    .arrow-icon {
         transition: 800ms;
-        &.open{
+        &.open {
             -webkit-transform: rotateX(180deg);
             transform: rotateX(180deg);
-            
         }
     }
 }
@@ -67,5 +66,5 @@
     -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
-    pointer-events: none; 
+    pointer-events: none;
 }
