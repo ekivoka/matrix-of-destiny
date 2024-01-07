@@ -9,7 +9,6 @@ export default defineConfig({
     alias: {
       $fonts: resolve('src/assets/fonts')
     }
-  }
-  
-  
+  },
+  base: "/matrix-of-destiny/"
 })
