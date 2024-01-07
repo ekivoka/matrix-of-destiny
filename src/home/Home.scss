@@ -1,10 +1,10 @@
 @import "../ui.scss";
 
 .home {
-    height: 100%;
     padding: 42px;
-    background-color: $black;
     color: $white;
+    transition: height 200ms;
+    // overflow: scroll;
 
     .accent-text {
         color: $accent;
@@ -115,9 +115,68 @@
         font-family: "Geologica";
         font-weight: 200;
         font-size: 10px;
-        line-height:16px;
+        line-height:12px;
         text-align: center;
+        color: $gray;
     }
+
+    .pro-description{
+        margin-bottom: 24px;
+    }
+
+    .collapse-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 36px;
+
+        .feature-details-list{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            padding-top: 16px; 
+            margin-bottom: 16px;
+            &__item{
+                display: flex;
+                align-items: center;
+                border: 1px solid $white;
+                gap: 13px;
+                font-family: "Geologica";
+                font-weight: 200;
+                font-size: 14px;
+                line-height: 19px;
+                padding:6px 12px ;
+                border-radius: 20px;
+                
+                &.pro::after{
+                    content: "";
+                    display: block;
+                    width: 14px;
+                    height: 19px;
+                    background: url(../assets/imgs/pro-icon.svg);
+                    background-size: contain;
+                }
+            }
+        }
+    
+        .feature-description{
+            font-family: "Geologica";
+            font-weight: 200;
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-between;
+        font-family: "Geologica";
+        font-weight: 200;
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+   
 
     
 }

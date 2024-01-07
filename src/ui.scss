@@ -4,6 +4,13 @@
     font-family: "Geologica";
     src: url("$fonts/geologica/Geologica-Regular.ttf") format("truetype");
 }
+
+@font-face {
+    font-family: "Geologica";
+    src: url("$fonts/geologica/Geologica-Medium.ttf") format("truetype");
+    font-weight:500
+}
+
 @font-face {
     font-family: "Geologica";
     src: url("$fonts/geologica/Geologica-Light.ttf") format("truetype");
@@ -33,4 +40,9 @@ $white: #ffffff;
 $black: #111111;
 $pink: #fb35a7;
 $accent: #6d41ce;
+$gray: #909090;
 $gradient:  linear-gradient(to right, #f234a3, #4852fd);
+
+body{
+    background-color: $black;
+}

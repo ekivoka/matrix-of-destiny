@@ -1,11 +1,15 @@
 import "./Home.scss";
 import appstoreBtn from "../assets/imgs/appstore-btn.png";
+import FeatureCollapse from "./FeatureCollapse";
 
 function Home() {
     return (
         <div className="home">
             <div className="login-btn">Войти</div>
-            <h1 className="title"> матрица судьбы </h1>
+            <h1 onClick={() => console.log("hui")} className="title">
+                {" "}
+                матрица судьбы{" "}
+            </h1>
             <div className="subtitle"> Построй опору в жизни и начни свой осознанный путь</div>
             <img src={appstoreBtn} className="appstore-btn"></img>
             <div className="caption">
@@ -24,37 +28,101 @@ function Home() {
             <button className="gradient-btn">Продолжить за 349 ₽ в месяц</button>
             <div className="btn-caption">Подписку можно отменить в любой момент</div>
 
-            <div className="primary-text">
-                Приобретая тариф <span className="accent-text">PRO</span>, ты получаешь доступ к полной расшифровке всех матриц,
-                нумерологии и рекомендациям для улучшения своей жизни
+            <div className="pro-description primary-text">
+                Приобретая тариф <span className="accent-text">PRO</span>, ты получаешь доступ к
+                полной расшифровке всех матриц, нумерологии и рекомендациям для улучшения своей
+                жизни
             </div>
-            {/*  */}
 
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
+            <div className="collapse-wrapper">
+                <FeatureCollapse title="Матрица судьбы">
+                    <div className="feature-details-list">
+                        <div className="feature-details-list__item pro">Основа личности</div>
+                        <div className="feature-details-list__item pro">Финансы</div>
+                        <div className="feature-details-list__item">Отношения</div>
+                        <div className="feature-details-list__item">Родовая карма</div>
+                    </div>
+                    <div className="feature-description">
+                        Полная расшифровка всех энергий, подробное описание каждой энерегии, энергий
+                        в плюсе и минусе, энергии по годам
+                    </div>
+                </FeatureCollapse>
 
+                <FeatureCollapse title="Матрица совместимости">
+                    <div className="feature-details-list">
+                        <div className="feature-details-list__item pro">Основа личности</div>
+                        <div className="feature-details-list__item pro">Финансы</div>
+                        <div className="feature-details-list__item">Отношения</div>
+                        <div className="feature-details-list__item">Родовая карма</div>
+                    </div>
+                    <div className="feature-description">
+                        Полная расшифровка всех энергий, подробное описание каждой энерегии, энергий
+                        в плюсе и минусе, энергии по годам
+                    </div>
+                </FeatureCollapse>
 
-            
-            <div>
-                {" "}
-                Приобретая тариф PRO, ты получаешь доступ к полной расшифровке всех матриц,
-                нумерологии и рекомендациям для улучшения своей жизни{" "}
+                <FeatureCollapse title="Матрицам финансов">
+                    <div className="feature-details-list">
+                        <div className="feature-details-list__item pro">Основа личности</div>
+                        <div className="feature-details-list__item pro">Финансы</div>
+                        <div className="feature-details-list__item">Отношения</div>
+                        <div className="feature-details-list__item">Родовая карма</div>
+                    </div>
+                    <div className="feature-description">
+                        Полная расшифровка всех энергий, подробное описание каждой энерегии, энергий
+                        в плюсе и минусе, энергии по годам
+                    </div>
+                </FeatureCollapse>
+
+                <FeatureCollapse title="Матрица ребенка">
+                    <div className="feature-details-list">
+                        <div className="feature-details-list__item pro">Основа личности</div>
+                        <div className="feature-details-list__item pro">Финансы</div>
+                        <div className="feature-details-list__item">Отношения</div>
+                        <div className="feature-details-list__item">Родовая карма</div>
+                    </div>
+                    <div className="feature-description">
+                        Полная расшифровка всех энергий, подробное описание каждой энерегии, энергий
+                        в плюсе и минусе, энергии по годам
+                    </div>
+                </FeatureCollapse>
+
+                <FeatureCollapse title="Нумерология">
+                    <div className="feature-details-list">
+                        <div className="feature-details-list__item pro">Основа личности</div>
+                        <div className="feature-details-list__item pro">Финансы</div>
+                        <div className="feature-details-list__item">Отношения</div>
+                        <div className="feature-details-list__item">Родовая карма</div>
+                    </div>
+                    <div className="feature-description">
+                        Полная расшифровка всех энергий, подробное описание каждой энерегии, энергий
+                        в плюсе и минусе, энергии по годам
+                    </div>
+                </FeatureCollapse>
+
+                <FeatureCollapse title="Рекомендации">
+                    <div className="feature-details-list">
+                        <div className="feature-details-list__item pro">Основа личности</div>
+                        <div className="feature-details-list__item pro">Финансы</div>
+                        <div className="feature-details-list__item">Отношения</div>
+                        <div className="feature-details-list__item">Родовая карма</div>
+                    </div>
+                    <div className="feature-description">
+                        Полная расшифровка всех энергий, подробное описание каждой энерегии, энергий
+                        в плюсе и минусе, энергии по годам
+                    </div>
+                </FeatureCollapse>
             </div>
-            <div>
-                <div> Матрица судьбы </div>
-                <div> Матрица совместимости</div>
-                <div> Матрицам финансов</div>
-                <div> Матрица ребенка</div>
-                <div> Нумерология </div>
-                <div> Рекомендации</div>
+
+            <button className="gradient-btn">Продолжить за 349 ₽ в месяц</button>
+            <div className="btn-caption">
+                Подписку можно отменить в любой момент <br /> Cписание раз в месяц
             </div>
-            <div>Продолжить за 349 р. в месяц</div>
-            <div>Подписку можно отменить в любой момент списание раз в месяц.</div>
-            <div>Terms of service</div>
-            <div>Privacy policy</div>
-            <div>we do not collect cookie</div>
+            <footer>
+                <div>Terms of service</div>
+                <div>Privacy policy</div>
+                <div>We do not collect cookie</div>
+            </footer>
         </div>
     );
 }
