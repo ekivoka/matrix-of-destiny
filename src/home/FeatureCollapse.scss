@@ -1,0 +1,71 @@
+@import "../ui.scss";
+
+.feature-collapse {
+    position: relative;
+    padding: 12px;
+    font-family: "Geologica";
+    font-weight: 200;
+    font-size: 13px;
+    line-height: 16px;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;        
+
+        &-title{
+            font-family: "Geologica";
+            font-weight: 200;
+            font-size: 14px;
+            line-height:16px;
+            flex-grow: 1;
+        }
+        &-icons{
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+    }
+
+    &__content {
+        overflow: hidden;
+        .test{
+            padding: 16px;
+        }
+    }
+
+    .pro-badge{
+        background: $gradient;
+        font-family: "Geologica";
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 10px;
+        padding: 4px 8px;
+        border-radius: 35px;
+    }
+
+    .arrow-icon{
+        transition: 800ms;
+        &.open{
+            -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+            
+        }
+    }
+}
+
+.feature-collapse::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background: $gradient border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    pointer-events: none; 
+}
