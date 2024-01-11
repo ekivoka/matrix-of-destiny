@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import "./FeatureCollapse.scss";
 import arrowIcon from "../assets/imgs/arrow-icon.svg";
@@ -7,8 +7,12 @@ import PropTypes from "prop-types";
 function FeatureCollapse({ children, title }) {
     const [isOpen, setIsOpen] = useState(false);
 
+    const onClick = useCallback(() => {
+        setIsOpen((isOpen)=>!isOpen)
+    },[])
+
     return (
-        <motion.div initial={false} className="feature-collapse" onClick={() => setIsOpen(!isOpen)}>
+        <motion.div initial={false} className="feature-collapse" onClick={onClick}>
             <div className="feature-collapse__header">
                 <div className="feature-collapse__header-title">{title}</div>
                 <div className="feature-collapse__header-icons">
