@@ -7,21 +7,21 @@
 
     .wrapper-top {
         padding: 42px;
-        // background-image: url(../assets/imgs/bg-light.svg);
-        // background-repeat: no-repeat;
-        // background-position: top right;
+        background-image: url(../assets/imgs/bg-light.svg);
+        background-repeat: no-repeat;
+        background-position: top right;
     }
 
     .wrapper-bottom {
         padding: 42px;
-        // background-image: url(../assets/imgs/bg-light-bottom.svg);
-        // background-repeat: no-repeat;
-        // background-position: -40% 0%;
-        // transition: background-position 800ms;
+        background-image: url(../assets/imgs/bg-light-bottom.png);
+        background-repeat: no-repeat;
+        background-position: -40% 0%;
+        transition: background-position 800ms;
 
-        // &:hover{
-        //     background-position: 0% 0%;
-        // }
+        &:hover{
+            background-position: 0% 0%;
+        }
     }
 
     .accent-text {
