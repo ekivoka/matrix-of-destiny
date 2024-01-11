@@ -5,7 +5,7 @@ import FeatureCollapse from "./FeatureCollapse";
 function Home() {
     return (
         <div className="home">
-            <div className="wrapper-top bg-light">
+            <div className="wrapper-top">
                 <div className="login-btn">Войти</div>
                 <h1 className="title">матрица судьбы</h1>
                 <div className="subtitle"> Построй опору в жизни и начни свой осознанный путь</div>
@@ -27,7 +27,7 @@ function Home() {
                 <button className="gradient-btn">Продолжить за 349 ₽ в месяц</button>
                 <div className="btn-caption">Подписку можно отменить в любой момент</div>
             </div>
-            <div className="wrapper-bottom bg-light-bottom">
+            <div className="wrapper-bottom">
                 <div className="pro-description primary-text">
                     Приобретая тариф <span className="accent-text">PRO</span>, ты получаешь доступ к
                     полной расшифровке всех матриц, нумерологии и рекомендациям для улучшения своей
