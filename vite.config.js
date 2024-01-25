@@ -10,5 +10,4 @@ export default defineConfig({
       $fonts: resolve('src/assets/fonts')
     }
   },
-  base: "/matrix-of-destiny/"
 })

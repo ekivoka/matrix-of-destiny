@@ -17,11 +17,11 @@
         background-image: url(../assets/imgs/bg-light-bottom.png);
         background-repeat: no-repeat;
         background-position: -40% 0%;
-        transition: background-position 800ms;
+        // transition: background-position 800ms;
 
-        &:hover{
-            background-position: 0% 0%;
-        }
+        // &:hover{
+        //     background-position: 0% 0%;
+        // }
     }
 
     .accent-text {
@@ -37,6 +37,7 @@
     }
 
     .login-btn {
+        display: block;
         margin: 8px;
         text-align: right;
         font-family: "Geologica";
@@ -44,6 +45,7 @@
         font-size: 14px;
         line-height: 16px;
         text-decoration: underline;
+        color: $white;
     }
 
     .title {

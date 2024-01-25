@@ -1,12 +1,14 @@
 import "./Home.scss";
 import appstoreBtn from "../assets/imgs/appstore-btn.png";
 import FeatureCollapse from "./FeatureCollapse";
-
+import { Link } from "react-router-dom";
 function Home() {
     return (
         <div className="home">
             <div className="wrapper-top">
-                <div className="login-btn">Войти</div>
+                
+                <Link className="login-btn" to="/login">Войти</Link>
+                
                 <h1 className="title">матрица судьбы</h1>
                 <div className="subtitle"> Построй опору в жизни и начни свой осознанный путь</div>
                 <img src={appstoreBtn} className="appstore-btn"></img>
