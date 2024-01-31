@@ -1,0 +1,78 @@
+@import "../ui.scss";
+
+.feature-card {
+    position: relative;
+    width: 30%;
+    min-width: 300px;
+    border: 2px solid rgba($gray, 0.5);
+    border-radius: 20px;
+    padding: 2em;
+    font-size: 0.8em;
+    margin-bottom: 1.3em;
+
+    &__title {
+        font-family: "Cruinn";
+        font-weight: bold;
+        font-size: 1.6em;
+        line-height: 1.6em;
+        background: $gradient;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        white-space: nowrap;
+        padding-bottom: 0.5em;
+    }
+
+    &__content {
+        width: 90%;
+        .feature-details-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            padding-top: 16px;
+            margin-bottom: 16px;
+            &__item {
+                display: flex;
+                align-items: center;
+                border: 1px solid $white;
+                gap: 13px;
+                font-family: "Geologica";
+                font-weight: 200;
+                font-size: 0.9em;
+                line-height: 1.3em;
+                padding: 6px 12px;
+                border-radius: 20px;
+
+                &.pro::after {
+                    content: "";
+                    display: block;
+                    width: 1em;
+                    height:1.3em;
+                    background: url(../assets/imgs/pro-icon.svg);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+            }
+        }
+
+        .feature-description {
+            font-family: "Geologica";
+            font-weight: 200;
+            font-size: 1em;
+            line-height: 1.5em;
+            color: rgba($white, 0.7);
+        }
+    }
+
+    .soon-badge {
+        position: absolute;
+        top: -0.7em;
+        background: $gradient;
+        font-family: "Geologica";
+        font-weight: 500;
+        font-size: 1em;
+        line-height: 1em;
+        padding: 0.3em 0.6em;
+        border-radius: 35px;
+    }
+}

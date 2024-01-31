@@ -1,25 +1,22 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.scss";
-import Home from "./home";
+import {Home, HomeDesktop} from "./home";
 import Login from "./Login.jsx";
-
+import { isMobile } from "react-device-detect";
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <Home/>,
-    },{
+        element: isMobile ? <Home /> : <HomeDesktop />,
+    },
+    {
         path: "/login",
-        element: <Login/>,
-    }
+        element: <Login />,
+    },
 ]);
 
 function App() {
-    return (
-        
-        <RouterProvider router={router} />
-        
-    );
+    return <RouterProvider router={router} />;
 }
 
 export default App;
