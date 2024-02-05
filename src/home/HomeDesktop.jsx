@@ -45,13 +45,168 @@ function HomeMobile() {
                 </section>
             </div>
             <section className="features-wrapper">
-                <FeatureCard title={"Матрица судьбы"} />
-                <FeatureCard title={"Матрица судьбы"} />
-                <FeatureCard title={"Матрица судьбы"} />
-                <FeatureCard title={"Матрица судьбы"} />
-                <FeatureCard title={"Матрица судьбы"} />
-                <FeatureCard title={"Матрица судьбы"} />
+                <FeatureCard
+                    title={"Матрица судьбы"}
+                    description={
+                        "Полная расшифровка всех энергий, подробное описание каждой энерегии, энергий в плюсе и минусе, энергии по годам"
+                    }
+                    features={[
+                        {
+                            text: "Финансы",
+                            isPro: true,
+                        },
+                        {
+                            text: "Отношения",
+                            isPro: false,
+                        },
+                        {
+                            text: "Основы личности",
+                            isPro: true,
+                        },
+                        {
+                            text: "Родовая карма",
+                            isPro: false,
+                        },
+                    ]}
+                />
+
+                <FeatureCard
+                    title={"Матрица совместимости"}
+                    description={
+                        "Полная расшифровка всех энергий, подробное описание каждой энерегии, энергий в плюсе и минусе, энергии по годам"
+                    }
+                    features={[
+                        {
+                            text: "Финансы",
+                            isPro: true,
+                        },
+                        {
+                            text: "Отношения",
+                            isPro: false,
+                        },
+                        {
+                            text: "Основы личности",
+                            isPro: true,
+                        },
+                        {
+                            text: "Родовая карма",
+                            isPro: false,
+                        },
+                    ]}
+                />
+
+                <FeatureCard
+                    title={"Матрица ребенка"}
+                    description={
+                        "Полная расшифровка всех энергий, подробное описание каждой энерегии, энергий в плюсе и минусе, энергии по годам"
+                    }
+                    features={[
+                        {
+                            text: "Финансы",
+                            isPro: true,
+                        },
+                        {
+                            text: "Отношения",
+                            isPro: false,
+                        },
+                        {
+                            text: "Основы личности",
+                            isPro: true,
+                        },
+                        {
+                            text: "Родовая карма",
+                            isPro: false,
+                        },
+                    ]}
+                />
+
+                <FeatureCard
+                    title={"Матрица финансов"}
+                    description={
+                        "Полная расшифровка всех энергий, подробное описание каждой энерегии, энергий в плюсе и минусе, энергии по годам"
+                    }
+                    isSoon = {true}
+                    features={[
+                        {
+                            text: "Финансы",
+                            isPro: true,
+                        },
+                        {
+                            text: "Отношения",
+                            isPro: false,
+                        },
+                        {
+                            text: "Основы личности",
+                            isPro: true,
+                        },
+                        {
+                            text: "Родовая карма",
+                            isPro: false,
+                        },
+                    ]}
+                />
+
+                <FeatureCard
+                    title={"Нумерология"}
+                    description={
+                        "Полная расшифровка всех энергий, подробное описание каждой энерегии, энергий в плюсе и минусе, энергии по годам"
+                    }
+                    isSoon = {true}
+                    features={[
+                        {
+                            text: "Финансы",
+                            isPro: true,
+                        },
+                        {
+                            text: "Отношения",
+                            isPro: false,
+                        },
+                        {
+                            text: "Основы личности",
+                            isPro: true,
+                        },
+                        {
+                            text: "Родовая карма",
+                            isPro: false,
+                        },
+                    ]}
+                />
+
+                <FeatureCard
+                    title={"Ежедневные рекомендации"}
+                    description={
+                        "Полная расшифровка всех энергий, подробное описание каждой энерегии, энергий в плюсе и минусе, энергии по годам"
+                    }
+                    isSoon = {true}
+                    features={[
+                        {
+                            text: "Финансы",
+                            isPro: true,
+                        },
+                        {
+                            text: "Отношения",
+                            isPro: false,
+                        },
+                        {
+                            text: "Основы личности",
+                            isPro: true,
+                        },
+                        {
+                            text: "Родовая карма",
+                            isPro: false,
+                        },
+                    ]}
+                />
             </section>
+            <footer>
+                <button className="gradient-btn">Продолжить за 349 ₽ в месяц</button>
+                <div className="btn-caption">Подписку можно отменить в любой момент</div>
+                <div className="document-links">
+                    <a href="#">Terms of service</a>
+                    <a href="#">Privacy policy</a>
+                    <p className="cookie-text">We do not collect cookies</p>
+                </div>
+            </footer>
         </div>
     );
 }
