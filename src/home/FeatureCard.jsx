@@ -1,22 +1,24 @@
 import "./FeatureCard.scss";
 
-function FeatureCard({ title }) {
+function FeatureCard({ title, description, features = [], isSoon = false }) {
+    const featuresItems = features.map((feature, index) => {
+        let className = `feature-details-list__item${feature.isPro ? " pro" : ""}`;
+        return (
+            <div key={index} className={className}>
+                {feature.text}
+            </div>
+        );
+    });
     return (
         <div className="feature-card">
-            <Badge />
+            {isSoon && <Badge />}
             <div className="feature-card__title">{title}</div>
 
             <div className="feature-card__content">
                 <div className="feature-details-list">
-                    <div className="feature-details-list__item pro">Финансы</div>
-                    <div className="feature-details-list__item">Отношения</div>
-                    <div className="feature-details-list__item pro">Основа личности</div>
-                    <div className="feature-details-list__item">Родовая карма</div>
+                    {featuresItems}
                 </div>
-                <div className="feature-description">
-                    Полная расшифровка всех энергий, подробное описание каждой энерегии, энергий в
-                    плюсе и минусе, энергии по годам
-                </div>
+                <div className="feature-description">{description}</div>
             </div>
         </div>
     );

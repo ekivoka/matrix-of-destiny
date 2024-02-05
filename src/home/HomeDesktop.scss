@@ -152,10 +152,10 @@
         }
     }
 
-    .features-wrapper{
+    .features-wrapper {
         display: flex;
         flex-direction: row;
-        justify-content:center;
+        justify-content: center;
         gap: 1.3em;
         flex-wrap: wrap;
 
@@ -163,6 +163,70 @@
             margin-left: -4vw;
             margin-right: -4vw;
         }
-    
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin:0 -10vw;
+        padding:2em 2em;
+
+        @media (min-width: 1500px) {
+            margin: 0 -22vw;
+        }
+
+        .gradient-btn {
+            width: 300px;
+            margin-bottom: 8px;
+            padding: 1em;
+            border: none;
+            border-radius: 40px;
+            background: $gradient;
+            font-family: "Geologica";
+            font-weight: 300;
+            font-size: 1em;
+            line-height: 1em;
+            color: $white;
+        }
+
+        .btn-caption {
+            margin-bottom: 20px;
+            font-family: "Geologica";
+            font-weight: 200;
+            font-size: 0.8em;
+            line-height: 1em;
+            text-align: center;
+            color: $gray;
+        }
+
+        .document-links {
+            width: 100%;
+            display: flex;
+            gap: 20px;
+            align-items: left;
+            a, .cookie-text{
+                display: block;
+                text-align: right;
+                font-family: "Geologica";
+                font-weight: 200;
+                font-size: 14px;
+                line-height: 18px;
+                text-decoration: underline;
+                color: $white; 
+            }
+
+            a:active{
+                color: $white;  
+            }
+            a:visited{
+                color: $white;  
+            }
+            .cookie-text {
+                margin: 0;
+                text-decoration:none;
+
+            }
+        }
     }
 }
