@@ -1,2 +1,4 @@
 import Home from './Home';
-export default Home;
+import HomeDesktop from './HomeDesktop';
+
+export { Home ,HomeDesktop};
